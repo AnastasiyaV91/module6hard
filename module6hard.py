@@ -66,7 +66,7 @@ class Cube(Figure):
 
     def __init__(self, color, sides):
         super().__init__(color, sides)
-        self.__sides = [sides] * self.sides_count
+        self.__sides = [sides]
 
     def get_volume(self):
         return self.__sides[0] ** 3

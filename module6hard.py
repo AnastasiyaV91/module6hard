@@ -23,7 +23,7 @@ class Figure:
                 return False
 
     def get_sides(self):
-        return self.__sides
+        return list(self.__sides) * self.sides_count
 
     def __len__(self):
         return sum(self.__sides)
